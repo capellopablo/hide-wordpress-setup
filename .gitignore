@@ -1,0 +1,15 @@
+# Ignore resources directory
+!public/resources
+!public/resources/mu-plugins
+!public/resources/modules
+!public/resources/themes
+public/resources/*
+
+!public/app
+public/app/*
+
+
+/public/app
+/vendor
+production-config.php
+local-config.php
