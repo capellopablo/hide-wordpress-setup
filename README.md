@@ -2,14 +2,14 @@
 
 Custom WordPress intall for security
 
-## Notes
+## Features
 
-* Usar WordPress como dependencia de composer.
-* Datos del configuración del entorno fuera de la carpeta pública
-* WordPress core en carpeta app para no dejar referencias wp
-* Resources: Carpeta de wp-content custom para no dejar referencias
-* Modules: Carpeta de plugins custom para no dejar referencias de plugins
-* {custom-theme-name}: Nombre personalizado del theme y child para no dejar referencias del theme activo
+* Use WordPress as a composer dependency.
+* Environment configuration outside the public directory
+* WordPress core in app folder to not leave references /wp/
+* Resources: Custom directory to not to leave references /wp-content/ 
+* Modules: Custom directory to not to leave references /plugins/
+* {custom-theme-name}: Custom name of the theme and child to not leave references of the active theme
 
 
 ## Folder structure
@@ -18,15 +18,15 @@ Custom WordPress intall for security
 domain.com
  - {environment}.config.php
  - composer.json
- - /vendor/
- - /public/
+ - /vendor/                        (Composer packages folder)
+ - /public/                        (Public directory)
     - - index.php
     - - wp-config.php
-    - - /app/ (wp)
-    - - /resources/ (custom wp-content)
+    - - /app/                      (Here is WordPress core)
+    - - /resources/                (Custom wp-content directory)
     - - - /themes/
     - - - - /{custom-theme-name}/
-    - - - /modules/ (wp plugins)
+    - - - /modules/                (WordPress plugin directory)
     - - - /mu-plugins/ 
     - - - - custom-theme-dir.php
     - - - - mu-require.php
