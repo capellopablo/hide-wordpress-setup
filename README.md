@@ -1,6 +1,6 @@
 # Hide WordPress Install
 
-Custom WordPress intall for security
+Custom WordPress install for security or other reasons
 
 ## Features
 
